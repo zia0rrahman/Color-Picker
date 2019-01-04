@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlatColorPicker - By | Ziaur Rahman</title>
+    <link rel="stylesheet" href="css/app.css">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container-fluid text-center bg-dark mt-3">
+        <h1 class="text-white mt-2">Click On Color to copy the Colour Code!</h1>
+    </div>
+    <hr>
+
+    <h5 class="showCopy text-center bg-primary mt-4 text-white">Copied!<h5>
+
+    <div class="container-fluid mt-4">
+        <div class="row text-center text-white">
+            <div class="col-md-3" id="p1" onclick="copyToClipboard('#p1'); playAudio();">
+                <p id="p1" class="">#013243</p>
+            </div>
+            <div class="col-md-3" id="p2" onclick="copyToClipboard('#p2'); playAudio();">
+                <p id="p2">#1BBC9B</p>
+            </div>
+            <div class="col-md-3" id="p3" onclick="copyToClipboard('#p3'); playAudio();">
+                <p id="p3">#F89406</p>
+            </div>
+            <div class="col-md-3" id="p4" onclick="copyToClipboard('#p4'); playAudio();">
+                <p id="p4">#F6F8F8</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container-fluid mt-4">
+        <div class="row text-center text-white">
+            <div class="col-md-3" id="p5" onclick="copyToClipboard('#p5'); playAudio();">
+                <p id="p5">#2C82C9</p>
+            </div>
+            <div class="col-md-3" id="p6" onclick="copyToClipboard('#p6'); playAudio();">
+                <p id="p6">#25373D</p>
+            </div>
+            <div class="col-md-3" id="p7" onclick="copyToClipboard('#p7'); playAudio();">
+                <p id="p7">#C82647</p>
+            </div>
+            <div class="col-md-3" id="p8" onclick="copyToClipboard('#p8'); playAudio();">
+                <p id="p8">#008891</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- audio -->
+    <audio id="myAudio">
+        <source src="sound/button.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/colorPicker.js"></script>
+</body>
+</html>
